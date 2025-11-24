@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />  <!--supports all lang an emojis-->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My-Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--1rem = 16px-->
+
+
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home"><span>HV.Govardhan</span></a>
+      <nav class="main-nav">
+        <a href="#home">Home</a> <!--  #home: jumps to home section -->
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi — I’m Your<br> <!--next line-->
+            <strong>Govardhan.</strong>
+          </h1>
+          <p>Front-end developer / Designer. I have built clean, accessible websites using only HTML & CSS.</p>
+          <p class="cta-row">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </p>
+        </div>
+        <div class="hero-card">
+          <!-- Simple inline SVG avatar/placeholder
+          <svg viewBox="0 0 200 200" class="avatar"> -->
+            <div class="hero-card">
+              <img src="C:\Users\hvgov\Downloads\download.jpg" alt="Profile photo" class="avatar">
+            </div>
+            <!--<defs>
+              <linearGradient id="g" x1="0" x2="1">......  x1="0" → start at the left side,x2="1" → end at the right side.
+                <stop offset="0" stop-color="#6c5ce7"/>              ## (FOR SVG VIEWBOX.)
+                <stop offset="1" stop-color="#00b894"/>
+              </linearGradient>
+            </defs>
+            <rect width="200" height="200" rx="20" fill="url(#g)"/>
+            <g transform="translate(40,40)" fill="#fff">
+              <circle cx="60" cy="40" r="28"/>
+              <rect x="18" y="90" width="84" height="24" rx="8"/>
+            </g>
+          </svg>-->
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="about" class="about container">
+      <h2>•About Me</h2>
+      <p>I create responsive, accessible websites with just HTML and CSS — focusing on performance and
+         clarity.<br>I enjoy solving layout problems with CSS and exploring modern CSS features.</p>
+
+      <div class="two-col">
+        <div>
+          <h3>• Background:</h3>
+          <p>I am a second-year Computer Science Engineering student at RNS Institute of Technology,
+             Bangalore, with a strong interest in web development.<br>
+             I enjoy exploring technologies and building projects that help me improve my skills.
+            </p>
+        </div>
+        <div>
+          <h3>• What I do:</h3>
+          <ul>
+            <li>I build responsive web pages using HTML and CSS.</li>
+            <li>I practice Data Structures and Algorithms in C.</li>           <!--bullet poits-->
+            <li>Improving my problem-solving and web development skills.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <h2>• Selected Projects</h2>
+      <p class="muted">Click on the project titles to open the projects.</p>
+
+      <div class="project-grid">
+        <!-- Project card 1 -->
+        <article class="project-card">
+          <div class="thumb simple-thumb">
+            Project 1
+          </div>
+          <!--<div class="thumb">
+             small inline SVG placeholder
+            <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+              <rect width="100%" height="100%" fill="#f1f2f6"></rect>
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="28" fill="#b2bec3">Project 1</text>
+            </svg>
+          </div> -->
+          <div class="project-body">
+            <h3><a href="#" aria-label="Open project 1">Project One</a></h3>
+            <p>Short description: what the project does and which techniques you used.</p>
+            <p class="tags">
+              <span>HTML</span><span>CSS Grid</span><span>Responsive</span>
+            </p>
+          </div>
+        </article>
+
+
+
+        <!-- Project card 2 -->
+        <article class="project-card">
+          <div class = "thumb simple-thumb">
+            Project 2
+          </div>
+          <!--<div class="thumb">
+            <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+              <rect width="100%" height="100%" fill="#f7f1ff"></rect>
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="28" fill="#6c5ce7">Project 2</text>
+            </svg>
+          </div>-->
+          <div class="project-body">
+            <h3><a href="#">Project Two</a></h3>
+            <p>Short description: highlight layout challenge solved using CSS.</p>
+            <p class="tags"><span>CSS</span><span>Animations</span></p>
+          </div>
+        </article>
+
+
+        
+        <!-- Project card 3 -->
+        <article class="project-card">
+          <div class="thumb simple-thumb">
+            Project 3
+          </div>
+          <!--<div class="thumb">
+            <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+              <rect width="100%" height="100%" fill="#eafff1"></rect>
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="28" fill="#00b894">Project 3</text>
+            </svg>
+          </div>-->
+          <div class="project-body">
+            <h3><a href="#">Project Three</a></h3>
+            <p>Short description: maybe a clone or design exercise — mention challenges solved.</p>
+            <p class="tags"><span>HTML</span><span>CSS Variables</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container">
+      <h2>• Skills</h2>
+      <div class="skill-list">
+        <div class="skill">
+          <h4>HTML</h4>
+          <div class="meter" aria-hidden="true"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>CSS</h4>
+          <div class="meter" aria-hidden="true"><span style="width:70%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Responsive Design</h4>
+          <div class="meter" aria-hidden="true"><span style="width:48%"></span></div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>• Contact</h2>
+      <p>If you'd like to work together, email me at <a href="#">hvgovardhan@gmail.com</a> or connect on <a href="#">LinkedIn</a>.</p>
+
+      <div class="contact-cards">
+        <div class="card">
+          <h3>Email:</h3>
+          <p><a href="#">hvgovardhan@gmail.com</a></p>
+        </div>
+        <div class="card">
+          <h3>Resume:</h3>
+          <p><a href="#">Download (PDF)</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p> © <span id="year"></span>RNSIT- BANGALORE -560098</p>
+    </div>
+  </footer>
+</body>
+</html>
